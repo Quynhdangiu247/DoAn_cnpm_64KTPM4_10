@@ -13,6 +13,7 @@ html {
     /*Hiện thị chữ lên trên website 1 cách tốt nhấtgrid.css*/
     /*Mặc định fontsize là 16px*/
 }
+
 /*----------------------------------------------------------------------*/
 /*----------------------------------REUSABLE COMPONENT-------------------*/
 .clearfix::after {
@@ -20,15 +21,18 @@ html {
     display: table;
     clear: both;
 }
+
 .btn:hover,
 .btn:active {
     background-color: black;
 }
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
-h2{
+
+h2 {
     text-transform: uppercase;
     color: pink;
     letter-spacing: 1px;
@@ -36,7 +40,8 @@ h2{
     font-weight: 700;
     text-align: center;
 }
-h2::after{
+
+h2::after {
     content: " ";
     display: block;
     width: 150px;
@@ -45,7 +50,8 @@ h2::after{
     margin: 0 auto;
     margin-top: 5px;
 }
-.p-long{
+
+.p-long {
     text-align: center;
     color: pink;
     font-size: 22px;
@@ -53,9 +59,11 @@ h2::after{
     margin-bottom: 40px;
     line-height: 140%;
 }
-section{
+
+section {
     padding: 50px;
 }
+
 /*----------------------------------------------------------------------*/
 /*-----------------------------HEADER-----------------------------------------*/
 header {
@@ -154,15 +162,17 @@ h1 {
 
 /*----------------------------------------------------------------------*/
 /*-----------------------------ABOUT-----------------------------------------*/
-.about-section{
+.about-section {
     background-color: rgb(66, 133, 133);
-    
+
 }
-.about-picture{
+
+.about-picture {
     position: relative;
     margin-top: 50px;
 }
-.about-picture img{
+
+.about-picture img {
     width: 90%;
     border-radius: 20px;
     border: 4px solid rgb(217, 150, 161);
@@ -170,93 +180,102 @@ h1 {
     /*x-y độ phóng to mở rộng màu*/
     /*filter: brightness(60%) blur(2px);*/
     transition: all .5s;
-    
+
 }
-.picture-title{
+
+.picture-title {
     position: absolute;
     top: 50%;
     left: 50%;
     color: rgb(241, 159, 173);
-    transform: translate(-65%,-100%);
+    transform: translate(-65%, -100%);
     opacity: 0;
     transition: all 0.5s;
 
 }
 
 .about-picture:hover img,
-.about-picture:active img{
+.about-picture:active img {
     filter: brightness(60%) blur(2px);
 }
 
 .about-picture:hover .picture-title,
-.about-picture:active .picture-title{
+.about-picture:active .picture-title {
     transform: translate(-65%, -50%);
     opacity: 1;
 }
-a{
-    color:#FF1493;
+
+a {
+    color: #FF1493;
     text-decoration: none;
     font-weight: 700;
 }
 
 /*--------------------------FOOTER----------------------------------*/
-footer{
+footer {
     text-align: center;
     background-color: #464545;
     color: white;
     padding: 20px;
 
 }
+
 /*--------------------------CONTACT----------------------------------*/
-.contact-section{
-    background-image:  url(../img/contact.jpg);
+.contact-section {
+    background-image: url(../img/contact.jpg);
     background-size: auto;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     height: 60vh;
 
-    
+
 }
-.information{
+
+.information {
     list-style: none;
     line-height: 200%;
     margin-top: 70px;
     word-spacing: 1px;
     font-size: 120%;
 }
+
 .information .small-icon:hover,
-.information .small-icon:active{
+.information .small-icon:active {
     transform: scale(1.3);
 }
 
-.social-icons{
+.social-icons {
     margin-top: 50px;
     list-style: none;
 }
 
-.social-icons li{
+.social-icons li {
     display: inline-block;
     font-size: 250%;
     margin-left: 70px;
 }
-.social-icons li i{
+
+.social-icons li i {
     transform: all .3s;
     cursor: pointer;
 }
+
 .social-icons li i:hover,
-.social-icons li i:active{
+.social-icons li i:active {
     transform: scale(1.3);
     color: cyan;
 }
+
 /*---------------------------Product section----------------------------------*/
 
-h2{
+h2 {
     text-align: center;
     color: #FF1493;
     margin-bottom: 70px;
 }
-.product-section{
+
+.product-section {
     background-image: url("../img/backgrounda.png");
     background-size: cover;
     /*Bao trùm toàn bộ web*/
@@ -266,45 +285,87 @@ h2{
     background-attachment: fixed;
     color: #FF1493;
 }
+
 /*------------------------FORM-------------------------------*/
-form{
+form {
     color: #FF1493;
-     background-color: rgba(0, 128, 128, 0.7);
-     margin-right: 5%;
-     padding: 30px;
-     font-size: 120%;
+    background-color: rgba(0, 128, 128, 0.7);
+    margin-right: 5%;
+    padding: 30px;
+    font-size: 120%;
 }
-input, textarea{
+
+input,
+textarea {
     outline: none;
     padding: 10px;
-    background-color:rgb(170, 247, 247);
+    background-color: rgb(170, 247, 247);
     border-radius: 10px;
     margin-left: -110px;
     cursor: pointer;
 }
-textarea{
+
+textarea {
     resize: none;
     height: 120px;
 }
-input{
+
+input {
     height: 50px;
 }
-form .row:last-child{
+
+form .row:last-child {
     text-align: center;
 }
-input[type = submit]{
+
+input[type=submit] {
     font-weight: 400;
     font-size: 80%;
 }
-input[type=text], input[type=email], input[type=tel], input[type=date]{
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date] {
     width: 50%;
     font-size: 60%;
 }
-textarea{
+
+textarea {
     width: 100%;
     font-size: 70%;
 }
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=date]:focus, textarea:focus{
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+textarea:focus,
+select:focus {
     color: white;
     background-color: rgba(48, 47, 47, 0.8);
+}
+
+select {
+    resize: none;
+    width: 35%;
+    font-size: 60%;
+    margin-left: 13%;
+    color: rgba(48, 47, 47, 0.8);
+    background-color: rgb(170, 247, 247);
+    font-size: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    border-top: 30px;
+    cursor: pointer;
+}
+
+option {
+    text-align: center;
+    color: rgb(48, 47, 47);
+}
+
+select:focus {
+    color: plum;
+    background-color: rgba(170, 247, 247, 0.8);
 }
