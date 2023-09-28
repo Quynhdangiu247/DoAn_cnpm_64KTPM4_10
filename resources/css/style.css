@@ -164,6 +164,7 @@ h1 {
 /*-----------------------------ABOUT-----------------------------------------*/
 .about-section {
     background-color: rgb(66, 133, 133);
+    height: 100vh;
 
 }
 
@@ -218,6 +219,95 @@ footer {
     color: white;
     padding: 20px;
 
+}
+
+/*------------------------FORM-------------------------------*/
+form {
+    color: #FF1493;
+    background-color: rgba(0, 128, 128, 0.7);
+    margin-right: 5%;
+    padding: 30px;
+    font-size: 120%;
+}
+
+input,
+textarea {
+    outline: none;
+    padding: 10px;
+    background-color: rgb(170, 247, 247);
+    border-radius: 10px;
+    margin-left: -110px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+input {
+    height: 50px;
+}
+
+form .row:last-child {
+    text-align: center;
+}
+
+input[type=submit] {
+    font-weight: 400;
+    font-size: 80%;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date] {
+    width: 50%;
+    font-size: 60%;
+    box-shadow: -2px -2px 0px 0px rgb(239, 122, 142);
+
+}
+
+textarea {
+    width: 100%;
+    font-size: 70%;
+    box-shadow: -2px -2px 0px 0px rgb(239, 122, 142);
+
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+textarea:focus,
+select:focus {
+    color: white;
+    background-color: rgba(48, 47, 47, 0.8);
+}
+
+select {
+    outline: none;
+    width: 35%;
+    font-size: 60%;
+    margin-left: 11.8%;
+    color: rgba(48, 47, 47, 0.8);
+    background-color: rgb(170, 247, 247);
+    font-size: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    border-top: 30px;
+    box-shadow: -2px -2px 0px 0px rgb(239, 122, 142);
+    cursor: pointer;
+}
+
+option {
+    text-align: center;
+    color: rgb(48, 47, 47);
+}
+
+select:focus {
+    color: plum;
+    background-color: rgba(170, 247, 247, 0.8);
 }
 
 /*--------------------------CONTACT----------------------------------*/
@@ -284,88 +374,4 @@ h2 {
     /*view-height*/
     background-attachment: fixed;
     color: #FF1493;
-}
-
-/*------------------------FORM-------------------------------*/
-form {
-    color: #FF1493;
-    background-color: rgba(0, 128, 128, 0.7);
-    margin-right: 5%;
-    padding: 30px;
-    font-size: 120%;
-}
-
-input,
-textarea {
-    outline: none;
-    padding: 10px;
-    background-color: rgb(170, 247, 247);
-    border-radius: 10px;
-    margin-left: -110px;
-    cursor: pointer;
-}
-
-textarea {
-    resize: none;
-    height: 120px;
-}
-
-input {
-    height: 50px;
-}
-
-form .row:last-child {
-    text-align: center;
-}
-
-input[type=submit] {
-    font-weight: 400;
-    font-size: 80%;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=date] {
-    width: 50%;
-    font-size: 60%;
-}
-
-textarea {
-    width: 100%;
-    font-size: 70%;
-}
-
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=tel]:focus,
-input[type=date]:focus,
-textarea:focus,
-select:focus {
-    color: white;
-    background-color: rgba(48, 47, 47, 0.8);
-}
-
-select {
-    resize: none;
-    width: 35%;
-    font-size: 60%;
-    margin-left: 13%;
-    color: rgba(48, 47, 47, 0.8);
-    background-color: rgb(170, 247, 247);
-    font-size: 80%;
-    border-radius: 10px;
-    padding: 10px;
-    border-top: 30px;
-    cursor: pointer;
-}
-
-option {
-    text-align: center;
-    color: rgb(48, 47, 47);
-}
-
-select:focus {
-    color: plum;
-    background-color: rgba(170, 247, 247, 0.8);
 }
