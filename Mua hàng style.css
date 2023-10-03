@@ -1,0 +1,75 @@
+#list-products{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#list-products .item{
+    width: 300px;
+    height: 400px;
+    margin-right:65px;
+    border-radius: 30px;
+    background: none;
+}
+#list-products .item img{
+    display: flex;
+    margin:0px auto;
+    margin-top:20px;
+    max-width: 70%;
+}
+#list-products .item .stars{
+    display:flex;
+    margin:0px auto;
+    width:35%;
+    margin-bottom: 20px;
+}
+#list-products .item .name{
+    text-align:center;
+    color:#626a67;
+}
+#list-products .item .comment{
+    text-align:center;
+    color:#626a67;
+}
+#list-products .item .price{
+    text-align:center;
+    color:red;
+    font-weight: bold;
+}
+#list-products .item .buy1{
+    text-align:center;
+    color:red;
+    background: rgba(0, 0, 255, 0.163);
+}
+.list-page{
+    width:50%;
+    margin:0px auto;
+}
+.list-page{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-page .item{
+    margin-top:100px;
+    width:37px;
+    height:37px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #626a67;
+}
+.list-page .item a{
+    text-decoration: none;
+}
+#feedback{
+    text-align:center;
+    margin-top:100px;
+    color:#626a67;
+}
+.text{
+    margin-top: 0px;
+}
