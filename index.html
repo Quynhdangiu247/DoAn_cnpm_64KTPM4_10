@@ -18,10 +18,17 @@
         <ul class="nav">
             <!--tạo các cặp thẻ có đánh số thứ tự-->
             <li><a href="#">How</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#1">About</a></li>
+            <li><a href="#2">Products</a></li>
+            <li><a href="#3">Contact</a></li>
+            <button id="loginButton">Login</button>
         </ul>
+        <script>
+            document.getElementById("loginButton").addEventListener("click", function () {
+                // Redirect to the index.html file
+                window.location.href = '/Login-Form-main/index.html';
+            });
+        </script>
         <div class="clearfix"></div>
         <div class="row">
             <div class="heading-main-box">
@@ -34,135 +41,141 @@
             </div>
         </div>
     </header>
-
-    <section class="about-section">
-        <div class="row">
-            <h2>About us</h2>
-            <p class="p-long">
-                • Nhiều người vẫn thiếu kiến thức về cách chăm sóc, bảo vệ mắt <br>
-                • Mọi người vẫn ít khi kiểm tra mắt định kì, dẫn đến việc phát hiện bệnh mắt muộn <br>
-                • Đối với những người vùng xa xôi hoặc khó tiếp cận thiếu kiến thức về mắt
-
-            </p>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-4 about-picture">
-                <img src="./resources/img/act1.jpg" alt="act1">
-                <p class="picture-title">
-                    <a href="#">Mắt</a>
-
-                </p>
-
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="./resources/img/act2.jpg" alt="act2">
-                <p class="picture-title">
-                    <a href="#">Sản phẩm</a>
-                </p>
-
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="./resources/img/act3.jpg" alt="act3">
-                <p class="picture-title">
-                    <a href="#">Đặt lịch</a>
-
-                </p>
-
-            </div>
-            <div class="col span-1-of-4 about-picture">
-                <img src="./resources/img/act4.jpg" alt="act4">
-                <p class="picture-title">
-                    <a href="#">Tin tức</a>
+    
+    <div id="1">
+        <section class="about-section">
+            <div class="row">
+                <h2>About us</h2>
+                <p class="p-long">
+                    • Nhiều người vẫn thiếu kiến thức về cách chăm sóc, bảo vệ mắt <br>
+                    • Mọi người vẫn ít khi kiểm tra mắt định kì, dẫn đến việc phát hiện bệnh mắt muộn <br>
+                    • Đối với những người vùng xa xôi hoặc khó tiếp cận thiếu kiến thức về mắt
+    
                 </p>
             </div>
-
-        </div>
-    </section>
+            <div class="row">
+                <div class="col span-1-of-4 about-picture">
+                    <img src="./resources/img/act1.jpg" alt="act1">
+                    <p class="picture-title">
+                        <a href="#">Mắt</a>
+    
+                    </p>
+    
+                </div>
+                <div class="col span-1-of-4 about-picture">
+                    <img src="./resources/img/act2.jpg" alt="act2">
+                    <p class="picture-title">
+                        <a href="#">Sản phẩm</a>
+                    </p>
+    
+                </div>
+                <div class="col span-1-of-4 about-picture">
+                    <img src="./resources/img/act3.jpg" alt="act3">
+                    <p class="picture-title">
+                        <a href="#">Đặt lịch</a>
+    
+                    </p>
+    
+                </div>
+                <div class="col span-1-of-4 about-picture">
+                    <img src="./resources/img/act4.jpg" alt="act4">
+                    <p class="picture-title">
+                        <a href="#">Tin tức</a>
+                    </p>
+                </div>
+    
+            </div>
+        </section>
+    </div>
     <div class="clearfix"></div>
 
-    <section class="product-section">
-        <h2>Đặt lịch</h2>
-        <div class="col span-3-of-3">
-            <form>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Họ và Tên:</label>
+    <div id="2">
+        <section class="product-section">
+            <h2>Đặt lịch</h2>
+            <div class="col span-3-of-3">
+                <form class="1">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Họ và Tên:</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" placeholder="Your name">
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" placeholder="Your name">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Ngày sinh:</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="date" placeholder="Day/Month/Year">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Ngày sinh:</label>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Email:</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" placeholder="Your Email">
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="date" placeholder="Day/Month/Year">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Số điện thoại:</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Email:</label>
+                    <div class="row">
+                        <label for="doctor">Chọn bác sĩ:</label>
+                        <select id="doctor" name="doctor">
+                            <option value="bs1">Chọn bác sĩ</option>
+                            <option value="bs1">Trần Văn Hải Cute:))</option>
+                            <option value="bs2">Trần Văn Hải đz</option>
+                            <option value="bs3">Trần Văn Hải tốt bụng</option>
+                        </select>
+    
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" placeholder="Your Email">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Mô tả:</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea placeholder="Mô tả bệnh tình"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Số điện thoại:</label>
+                    <div class="row">
+                        <input type="submit" class="btn" value="Đồng ý">
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="tel" placeholder="Your Phone">
-                    </div>
-                </div>
-                <div class="row">
-                    <label for="doctor">Chọn bác sĩ:</label>
-                    <select id="doctor" name="doctor">
-                        <option value="bs1">Chọn bác sĩ</option>
-                        <option value="bs1">Trần Văn Hải Cute:))</option>
-                        <option value="bs2">Trần Văn Hải đz</option>
-                        <option value="bs3">Trần Văn Hải tốt bụng</option>
-                    </select>
-
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Mô tả:</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <textarea placeholder="Mô tả bệnh tình"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="submit" class="btn" value="Đồng ý">
-                </div>
-            </form>
-        </div>
-    </section>
+                </form>
+            </div>
+        </section>
+    </div>
     <div class="clearfix"></div>
-
-    <section class="contact-section">
-        <div class="row">
-            <ul class="information">
-                <li><i class="fas fa-map-marker-alt small-icon"></i>Address: 175 Tây Sơn, Đống Đa, Hà Nội</li>
-                <li><i class="fas fa-envelope small-icon"></i>Email: Team10nohope@e.tlu.edu.vn</li>
-                <li><i class="fas fa-phone small-icon"></i>SĐT: (+84)0999999999</li>
-            </ul>
-            <ul class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100036509291375">
-                    <li><i class="fab fa-facebook"></i></li>
-                </a>
-                <a
-                    href="https://www.instagram.com/trvhai/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR25YsM_zklRTVE_3ENh4F3UVIrNrbNNbuoyul4xaqTEYvsFE8xR1_tjI7A">
-                    <li><i class="fab fa-instagram"></i></li>
-                </a>
-                <a href="#">
-                    <li><i class="fab fa-google-plus-square"></i></li>
-                </a>
-            </ul>
-        </div>
-    </section>
+<!---------------------------------------Contact-->
+    <div id="3">
+        <section class="contact-section">
+            <div class="row">
+                <ul class="information">
+                    <li><i class="fas fa-map-marker-alt small-icon"></i>Address: 175 Tây Sơn, Đống Đa, Hà Nội</li>
+                    <li><i class="fas fa-envelope small-icon"></i>Email: Team10nohope@e.tlu.edu.vn</li>
+                    <li><i class="fas fa-phone small-icon"></i>SĐT: (+84)0999999999</li>
+                </ul>
+                <ul class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100036509291375">
+                        <li><i class="fab fa-facebook"></i></li>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/trvhai/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwAR25YsM_zklRTVE_3ENh4F3UVIrNrbNNbuoyul4xaqTEYvsFE8xR1_tjI7A">
+                        <li><i class="fab fa-instagram"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fab fa-google-plus-square"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+    </div>
     <footer>
         <p>
             Haicute:)) &copy; 2023 by Trần Văn Hải

@@ -12,6 +12,15 @@ html {
     text-rendering: optimizeLegibility;
     /*Hiện thị chữ lên trên website 1 cách tốt nhấtgrid.css*/
     /*Mặc định fontsize là 16px*/
+    scroll-behavior: smooth;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./img/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*----------------------------------------------------------------------*/
@@ -99,9 +108,21 @@ header {
     transition: border-bottom 0.5s;
     padding: 3px 0;
 }
-
-.nav li a:hover,
-.nav li a:active {
+.nav button{
+    all: unset;
+    color: pink;
+    font-size: 110%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+    padding: 3px 0;
+    
+}
+.nav li :hover,
+.nav li :active {
+    border-bottom: 2px solid pink;
+}
+.nav button:hover,
+.nav button:active {
     border-bottom: 2px solid pink;
 }
 
@@ -289,7 +310,7 @@ select {
     outline: none;
     width: 35%;
     font-size: 60%;
-    margin-left: 11.8%;
+    margin-left: 12.8%;
     color: rgba(48, 47, 47, 0.8);
     background-color: rgb(170, 247, 247);
     font-size: 80%;
@@ -375,3 +396,5 @@ h2 {
     background-attachment: fixed;
     color: #FF1493;
 }
+
+/*---------------------------------Login-----------------------------------*/
